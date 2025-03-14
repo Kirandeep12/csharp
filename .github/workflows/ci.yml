@@ -44,6 +44,6 @@ jobs:
         working-directory: ./SdetBootcampDay1
         run: dotnet build --framework ${{ matrix.framework }} --no-restore
 
-      - name: Run tests from day1 Examples
+      - name: Run tests from day1 Exercises
         working-directory: ./SdetBootcampDay1
-        run: dotnet test --framework ${{ matrix.framework }} --no-restore --no-build --verbosity normal --filter Name~Examples
+        run: dotnet test --framework ${{ matrix.framework }} --no-restore --no-build --verbosity normal --filter Name~Exercises
